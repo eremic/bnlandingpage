@@ -1,0 +1,57 @@
+<div class="hero">
+  <p class="large brandon">BrewNation ariva</p>
+  <p class="small brandon">Join the Craft Beer revolution<br>with craft beer straight from the brewery.</p>
+</div>
+
+<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+  <% if Rails.application.config.ended %>
+    <%= render "users/campaign_ended" %>
+  <% else %>
+    <%= render "users/campaign_ongoing" %>
+  <% end %>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="alt-features-item align-center">
+                        <div class="alt-features-icon">
+                            <span class="icon-strategy"></span>
+                        </div>
+                        <h3 class="alt-features-title font-alt">BRANDING & GRAPHICS</h3>
+                        <div class="alt-features-descr align-left">
+                            In a competitive marketplace the perception that your company generates is crucial. Whether it is a logo or business card design we can help you spread the positive message to your clients and partners.
+                        </div><br />
+                        <div class="alt-features-descr align-left">
+                            <!-- Toggle -->
+                            <dl class="toggle">
+                                <dt>
+                                    <a href="">CORPORATE BRANDING</a>
+                                </dt>
+                                <dd>
+                                    Get the recognition your business deserves. Our team of passionate graphic designers will help you present your business to the world in the best possible way.
+                                </dd>
+                                <dt>
+                                    <a href="">LOGO DESIGN</a>
+                                </dt>
+                                <dd>
+                                    Your logo is a visual cornerstone of your company's brand. By designing a memorable logo your company will stand out from the crowd.
+                                </dd>
+                                <dt>
+                                    <a href="">PRINT DESIGN</a>
+                                </dt>
+                                <dd>
+                                    Things may be going green, but some things still need to be printed out. We will design marketing materials that reflect your brand and clearly communicate your message.
+                                </dd>
+                                <dt>
+                                    <a href="">VIDEO & ANIMATION</a>
+                                </dt>
+                                <dd>
+                                    Time after time it has been proven that some of the best content that can be posted online are videos and animation.
+                                </dd>
+
+                            </dl>
+                            <!-- End Toggle -->
+
+                        </div>
+
+                    </div>
+                </div>
+
